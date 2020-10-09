@@ -1,0 +1,40 @@
+:root {
+    background-color: rgb(252, 250, 246);
+    font-family: arial,sans-serif,serif;
+}
+.page{
+    max-width: 35rem;
+    margin: auto;
+    color: rgb(34, 34, 34);			
+
+}
+.page p {
+    text-align: justify;
+    line-height: 1.5;
+}
+.image{
+    width: 100%;
+}
+.image-box  img{
+    width: 100%;
+}
+.image-caption{
+    font-size: 0.8rem;
+}
+
+		@media screen and (max-width:359px) {
+			:root {font-size: 16px;}
+			div.page {width:100%;}
+		}
+
+		@media screen and (min-width:360px) {
+			:root {font-size: calc(16px + 2 * ((100vw - 360px) / 408));}
+			
+		}
+		@media screen and (min-width:768px) {
+			:root {font-size: calc(18px + 2 * ((100vw - 768px) / 598));}
+		}
+
+		@media screen and (min-width:1366px) {
+			:root {font-size:20px;}
+		}
